@@ -22,23 +22,21 @@
         <div class="logo">
           <img class="logoImg" src="logo.svg" alt="Logo" />
           <!-- Navbar Links -->
-        <ul class="nav-links navItemleft">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Tour</a></li>
-          <li><a href="#">Destination</a></li>
-          <li><a href="#">Activities</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+          <ul class="nav-links navItemleft">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-    
+
         <!-- Hamburger Icon -->
         <div class="hamburger">
           <span>&#9776;</span>
         </div>
-    
-        
-    
+
         <!-- Right Side Links -->
         <ul class="nav-links navItemRight">
           <li><a href="#">USD</a></li>
@@ -47,7 +45,7 @@
           <li class="loginBtn"><a href="#">Log in</a></li>
         </ul>
       </nav>
-    
+
       <!-- Sidebar Menu -->
       <div class="sidebar">
         <span class="close-btn">&times;</span>
@@ -68,24 +66,38 @@
         </ul>
       </div>
     </header>
-    
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
         <h1>Life Is Adventure, Make The Best Of It</h1>
         <div class="search-box">
-          <input type="text" placeholder="Where" class="input-box" />
-          <input
-            type="text"
-            placeholder="February 05 - March 14"
-            class="input-box"
-          />
-          <input type="text" placeholder="Tour Type" class="input-box" />
+          <div class="inputDiv">
+            <div>
+              <label for="whereInput">Where</label>
+            </div>
+            <div>
+              <input id="whereInput" placeholder="Search destinations" type="text" class="input-box" />
+            </div>
+          </div>
+          <div class="inputDiv">
+            <div>
+              <label for="Daterange">When</label>
+            </div>
+            <div>
+              <input type="text" id="dateRangeInput" class="input-box" />
+            </div>
+          </div>
+          <div class="inputDiv">
+            <div>
+              <label for="tourType">Tour Type</label>
+            </div>
+            <div>
+              <input type="text" id="tourType" placeholder="All tour" class="input-box" />
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <div class="landmark-background">
-      
-    </div> -->
     </section>
   </body>
   <script src="script.js"></script>

@@ -114,10 +114,13 @@
 
 /* Hero Section */
 .hero {
-  position: relative;
   text-align: center;
   padding: 100px 20px;
   background-color: #fef9f9;
+  background-image: url("https://s3-alpha-sig.figma.com/img/e4e9/4bcd/6013879f33e24c0450bcde15d215f8ae?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YLDvB8QQzl8bqKe9IIu6dmCHhQIWwuPaS08PWF-6XA1VF3CiFaM93tN69Z47qlR0hrMMcxuZzXilkyGXxIm1Z1-iiYVvnUYCIDv6uloHdh1OcGQS5qUAU~1hWLtbkyClLvtpnN404PAenBCwZSqwZaetJ3jqP4-qBGX7ZlyXH~lR7exquKPSeyRmAaPfTPdVUHofY~hfvjVP0XauTs1RaE71suphnt5TTqBjj40gz977SpKIpvNwXfCAQ6pRB97BoZV0qQ4vP087VzAgSqh8-yNJ2d0wkhIAQcQJjVoal164sWr1Xu~gCb5-eI~z68T52DrZHOJ~ltmk3GaCC3M5pg__"); /* Add image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .hero-content h1 {
@@ -132,31 +135,35 @@
 }
 
 .search-box {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  display: flex !important;
+  justify-content: center ;
+  gap: 20px ;
+  margin-top: 1rem ;
+}
+.inputDiv {
+  display: block;
+  text-align: left;
+  background-color: #fff;
 }
 
+.inputDiv div label {
+  padding-left: 10px;
+  color: #18144b;
+  font-weight: 600;
+}
 .input-box {
   padding: 15px;
-  border-radius: 25px;
   border: none;
   width: 200px;
 }
 
-.input-box:focus {
-  outline: 2px solid #ff6f61;
+#dateRangeInput::placeholder {
+  color: #000000 !important;
+  font-weight: 600;
 }
 
-.landmark-background {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url("https://s3-alpha-sig.figma.com/img/e4e9/4bcd/6013879f33e24c0450bcde15d215f8ae?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YLDvB8QQzl8bqKe9IIu6dmCHhQIWwuPaS08PWF-6XA1VF3CiFaM93tN69Z47qlR0hrMMcxuZzXilkyGXxIm1Z1-iiYVvnUYCIDv6uloHdh1OcGQS5qUAU~1hWLtbkyClLvtpnN404PAenBCwZSqwZaetJ3jqP4-qBGX7ZlyXH~lR7exquKPSeyRmAaPfTPdVUHofY~hfvjVP0XauTs1RaE71suphnt5TTqBjj40gz977SpKIpvNwXfCAQ6pRB97BoZV0qQ4vP087VzAgSqh8-yNJ2d0wkhIAQcQJjVoal164sWr1Xu~gCb5-eI~z68T52DrZHOJ~ltmk3GaCC3M5pg__"); /* Add image URL */
-  background-size: cover;
-  background-position: center;
-  height: 400px;
+.input-box:focus {
+  outline: 2px solid #ff6f61;
 }
 
 /* Responsive Styles */
@@ -166,6 +173,11 @@
   }
   .hero-content h1 {
     width: 700px;
+  }
+  .search-box {
+    display: flex !important;
+    justify-content: center;
+    gap: 15px;
   }
   .navItemRight li:last-child {
     display: block;
@@ -191,8 +203,11 @@
   }
 
   .search-box {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
     flex-direction: column;
     gap: 15px;
+    padding: 0 50px !important;
   }
 
   .input-box {
@@ -216,6 +231,10 @@
 
   .search-box {
     width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0 30px;
   }
 
   .input-box {
@@ -235,6 +254,13 @@
 
   .input-box {
     width: 100%;
+  }
+  .search-box {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    align-items: center;
+    padding: 0 30px;
   }
 
   .landmark-background {

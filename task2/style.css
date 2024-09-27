@@ -60,14 +60,13 @@
   margin-top: -0.7rem;
 }
 
-/* Hamburger Icon (Hidden by Default) */
 .hamburger {
   display: none;
   font-size: 30px;
   cursor: pointer;
 }
 
-/* Sidebar (Hidden by Default) */
+/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -136,9 +135,9 @@
 
 .search-box {
   display: flex !important;
-  justify-content: center ;
-  gap: 20px ;
-  margin-top: 1rem ;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
 }
 .inputDiv {
   display: block;
